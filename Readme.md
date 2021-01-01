@@ -1,6 +1,6 @@
 # Developing Native Android Binaries with VSCode
 
-This is an example project for developing native binaries for Android with VSCode.
+This is an example project for developing and debugging native binaries for Android with VSCode.
 
 ## Background
 
@@ -15,11 +15,11 @@ Also, not having to deal with the APK for now simplifies development.
 
 Requirements:
 - NDK
-- VSCode with cpptools and cmake-tools
+- VSCode with `cpptools`, `vscode-lldb` and `cmake-tools`
 
 Use `CMake: Select a Kit` to select the `Android` kit (`cmake-kits.json`).
 Adjust the NDK paths and `ANDROID_` settings as necessary.
-The `compilerPath` including the arguments is taken from `compile_commands.json` (it feels like a bug that the arguments are necessary).
+The `compilerPath` including the arguments is taken from `compile_commands.json` (it seems like a bug that the arguments are necessary).
 Intellisense should work after compilation (configured in `c_cpp_properties.json`).
 
 ## Running
@@ -52,5 +52,5 @@ But we can use a file on the device as input:
 We can link to any native Android library such as `log`.
 Follow the log with
 ```
-adb logcat -s AndroidBinaryTest
+adb logcat -s ABT
 ```
