@@ -1,0 +1,2 @@
+adb forward tcp:1234 tcp:1234
+adb push /home/dorian/Android/Sdk/ndk/22.0.7026061/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/11.0.5/lib/linux/aarch64/lldb-server /data/local/tmp

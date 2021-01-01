@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "/home/dorian/.config/i3/config": "i3",
+        "/home/dorian/.config/sway/config": "i3",
+        "/home/dorian/.config/waybar/config": "jsonc",
+        "*.rasi": "css",
+        "iostream": "cpp",
+        "cstdio": "cpp"
+    }
+}
